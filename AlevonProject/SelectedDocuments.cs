@@ -38,7 +38,9 @@ namespace AlevonProject
 
             articleSets.Add(generateArticleSet(@"USN(AN).docx", @"USN(PR).docx", @"USN(ExtPR).docx")); //USN
             articleSets.Add(generateArticleSet(@"RFID(AN).docx", @"RFID(PR).docx", @"RFID(ExtPR).docx")); //RFID
-            //articleSets.Add(generateArticleSet(@"Kvantovye_kommunikatsii(AN).docx", @"Kvantovye_kommunikatsii(PR).docx", @"Kvantovye_kommunikatsii(ExtPR).docx")); //QC
+
+            articleSets.Add(generateArticleSet(@"LTE(AN).docx", @"LTE(PR).docx", @"LTE(ExtPR).docx")); //LTE
+            articleSets.Add(generateArticleSet(@"LTEadvanced(AN).docx", @"LTEadvanced(PR).docx", @"LTEadvanced(ExtPR).docx")); //LTEadvanced
         }
 
         public void setArticleIndex(int index)

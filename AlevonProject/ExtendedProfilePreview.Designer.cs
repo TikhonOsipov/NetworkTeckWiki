@@ -30,6 +30,7 @@
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.goToMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -54,15 +55,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // goToMain
+            // 
+            this.goToMain.Location = new System.Drawing.Point(129, 477);
+            this.goToMain.Name = "goToMain";
+            this.goToMain.Size = new System.Drawing.Size(117, 23);
+            this.goToMain.TabIndex = 2;
+            this.goToMain.Text = "На главную";
+            this.goToMain.UseVisualStyleBackColor = true;
+            this.goToMain.Click += new System.EventHandler(this.goToMain_Click);
+            // 
             // ExtendedProfilePreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 512);
+            this.Controls.Add(this.goToMain);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.Name = "ExtendedProfilePreview";
-            this.Text = "ExtendedProfilePreview";
+            this.Text = "Расширенный профиль";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExtendedProfilePreview_FormClosing);
             this.Load += new System.EventHandler(this.ExtendedProfilePreview_Load);
             this.ResumeLayout(false);
@@ -73,5 +85,6 @@
 
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button goToMain;
     }
 }

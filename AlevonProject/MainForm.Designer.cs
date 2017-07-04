@@ -35,6 +35,8 @@
             this.qc = new System.Windows.Forms.LinkLabel();
             this.usn = new System.Windows.Forms.LinkLabel();
             this.rfid = new System.Windows.Forms.LinkLabel();
+            this.lte = new System.Windows.Forms.LinkLabel();
+            this.lteAdvanced = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +111,37 @@
             this.rfid.Text = "RFID";
             this.rfid.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.rfid_LinkClicked);
             // 
+            // lte
+            // 
+            this.lte.AutoSize = true;
+            this.lte.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lte.Location = new System.Drawing.Point(638, 414);
+            this.lte.Name = "lte";
+            this.lte.Size = new System.Drawing.Size(45, 24);
+            this.lte.TabIndex = 6;
+            this.lte.TabStop = true;
+            this.lte.Text = "LTE";
+            this.lte.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lte_LinkClicked);
+            // 
+            // lteAdvanced
+            // 
+            this.lteAdvanced.AutoSize = true;
+            this.lteAdvanced.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lteAdvanced.Location = new System.Drawing.Point(778, 291);
+            this.lteAdvanced.Name = "lteAdvanced";
+            this.lteAdvanced.Size = new System.Drawing.Size(136, 24);
+            this.lteAdvanced.TabIndex = 7;
+            this.lteAdvanced.TabStop = true;
+            this.lteAdvanced.Text = "LTE Advanced";
+            this.lteAdvanced.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lteAdvanced_LinkClicked);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 537);
+            this.Controls.Add(this.lteAdvanced);
+            this.Controls.Add(this.lte);
             this.Controls.Add(this.rfid);
             this.Controls.Add(this.usn);
             this.Controls.Add(this.qc);
@@ -121,7 +149,7 @@
             this.Controls.Add(this.buttonMimo);
             this.Controls.Add(this.pictureBox1);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Navigator";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -137,6 +165,8 @@
         private System.Windows.Forms.LinkLabel qc;
         private System.Windows.Forms.LinkLabel usn;
         private System.Windows.Forms.LinkLabel rfid;
+        private System.Windows.Forms.LinkLabel lte;
+        private System.Windows.Forms.LinkLabel lteAdvanced;
     }
 }
 

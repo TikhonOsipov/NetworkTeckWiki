@@ -75,7 +75,7 @@
             this.Controls.Add(this.openProfile);
             this.Controls.Add(this.richTextBox1);
             this.Name = "AnnotationPreview";
-            this.Text = "AnnotationPreview";
+            this.Text = "Аннотация";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AnnotationPreview_FormClosing);
             this.Load += new System.EventHandler(this.AnnotationPreview_Load);
             this.ResumeLayout(false);

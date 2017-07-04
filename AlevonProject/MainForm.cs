@@ -52,5 +52,15 @@ namespace AlevonProject
         {
             showAnnotation(4);
         }
+
+        private void lte_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            showAnnotation(5);
+        }
+
+        private void lteAdvanced_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            showAnnotation(6);
+        }
     }
 }

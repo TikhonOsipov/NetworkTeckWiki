@@ -34,5 +34,15 @@ namespace AlevonProject
             if (Program.profile == null) Program.profile = new ProfilePreview();
             Program.profile.Show();
         }
+
+        private void goToMain_Click(object sender, EventArgs e)
+        {
+            if (Program.main == null) Program.main = new MainForm();
+            Program.annotation = null;
+            Program.profile = null;
+            Program.extendedProfile = null;
+            Program.main.Show();
+            Hide();
+        }
     }
 }

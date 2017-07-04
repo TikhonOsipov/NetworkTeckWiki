@@ -27,6 +27,9 @@ namespace AlevonProject
                 doc.Content.Select();
                 doc.Content.Copy();
                 richTextBox.Paste();
+                //focus to the start of the document
+                richTextBox.SelectionLength = 0;
+                richTextBox.SelectionStart = 0;
             }
             catch (Exception ex)
             {
