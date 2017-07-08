@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace AlevonProject
@@ -17,6 +16,7 @@ namespace AlevonProject
         private void Form1_Load(object sender, EventArgs e)
         {
             Program.main = this;
+            Location = new System.Drawing.Point(100, 100);
             sd = SelectedDocuments.getInstance();
         }
 
@@ -61,6 +61,16 @@ namespace AlevonProject
         private void lteAdvanced_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             showAnnotation(6);
+        }
+
+        private void glonass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            showAnnotation(7);
+        }
+
+        private void nsn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            showAnnotation(8);
         }
     }
 }

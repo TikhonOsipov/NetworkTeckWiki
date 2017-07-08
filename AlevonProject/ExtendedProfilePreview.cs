@@ -12,9 +12,10 @@ namespace AlevonProject
 
         private void ExtendedProfilePreview_Load(object sender, EventArgs e)
         {
+            Location = new System.Drawing.Point(100, 100);
             SelectedDocuments mem = SelectedDocuments.getInstance();
             //Load extended profile and display on the form
-            new WordDocumentReader(mem.selectedExtendedProfile, richTextBox1);
+            new PdfDocumentReader(mem.selectedExtendedProfile, webBrowser1);
         }
 
         //back to profile

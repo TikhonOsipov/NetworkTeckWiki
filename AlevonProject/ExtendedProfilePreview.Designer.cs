@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.goToMain = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(812, 471);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
             // 
             // button1
             // 
@@ -57,6 +46,7 @@
             // 
             // goToMain
             // 
+            this.goToMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.goToMain.Location = new System.Drawing.Point(129, 477);
             this.goToMain.Name = "goToMain";
             this.goToMain.Size = new System.Drawing.Size(117, 23);
@@ -65,14 +55,25 @@
             this.goToMain.UseVisualStyleBackColor = true;
             this.goToMain.Click += new System.EventHandler(this.goToMain_Click);
             // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webBrowser1.Location = new System.Drawing.Point(12, 12);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(790, 459);
+            this.webBrowser1.TabIndex = 3;
+            // 
             // ExtendedProfilePreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 512);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.goToMain);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
             this.Name = "ExtendedProfilePreview";
             this.Text = "Расширенный профиль";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExtendedProfilePreview_FormClosing);
@@ -82,9 +83,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button goToMain;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

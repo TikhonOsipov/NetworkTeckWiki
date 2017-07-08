@@ -13,9 +13,10 @@ namespace AlevonProject
 
         private void AnnotationPreview_Load(object sender, EventArgs e)
         {
+            Location = new System.Drawing.Point(100, 100);
             SelectedDocuments mem = SelectedDocuments.getInstance();
             //Load annotation and display on the form
-            new WordDocumentReader(mem.selectedAnnotation, richTextBox1);
+            new PdfDocumentReader(mem.selectedAnnotation, webBrowser1);
         }
 
         private void openProfile_Click(object sender, EventArgs e)

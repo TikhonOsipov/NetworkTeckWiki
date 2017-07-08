@@ -112,12 +112,12 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABG8AAAMbCAYAAADzR7ioAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
@@ -126,8 +126,8 @@
         DUQyMFzWBZnFQBrgSi4oKgHSf4DYKCW1OBlopAGQnV1eUgAUZ5wDZIskZYPZG0DsopAgZyD7CJDNlw5h
         XwGxkyDsJyB2EdATQPYXkPp0MJuJA2wOhC0DYpekVoDsZXDOL6gsykzPKFEwtLS0VHBMyU9KVQiuLC5J
         zS1W8MxLzi8qyC9KLElNAaqFuA8MBCEKQSGmAdRooclAZQCKBwjrcyA4fBnFziDEECC5tKgMFhdMxoT5
-        CDPmSDAw+C9lYGD5gxAz6WVgWKDDwMA/FSGmZsjAIKDPwLBvDgDCs0/+1ia4KQAAAAlwSFlzAAALDwAA
-        Cw8BkvkDpQAA/k1JREFUeF7s/QnMXed13/v/EQRBUBTFRVG0uCiKoijuxcW9t006pHHSNGmaoUmTNLlp
+        CDPmSDAw+C9lYGD5gxAz6WVgWKDDwMA/FSGmZsjAIKDPwLBvDgDCs0/+1ia4KQAAAAlwSFlzAAALDgAA
+        Cw4BQL7hQQAA/k1JREFUeF7s/QnMXed13/v/EQRBUBTFRVG0uCiKoijuxcW9t006pHHSNGmaoUmTNLlp
         EieOHduJp3iQnXiK4ymxLcskJVESqXmiRIqkRImiJIoSKYmiRFLUPM+SNc+yZc2z9Pyf9fDZm2uv/d3T
         Ofucfc57ngIfpN5RLL7nPM9av7V43vf9/znnkiRJkiRZMN/73vfG9c+9/9v7Je8PvY94X/Lk/6321nrn
         e9u8fdFN3p3Ro9FT3g+jV6LXvTeNd7x3a7ga9M9n5L/X/rvk35/9WbI/m/w5sz9z9jXI15N9bfJ1ytcr

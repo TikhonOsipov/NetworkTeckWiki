@@ -13,9 +13,10 @@ namespace AlevonProject
 
         private void ProfilePreview_Load(object sender, EventArgs e)
         {
+            Location = new System.Drawing.Point(100, 100);
             SelectedDocuments mem = SelectedDocuments.getInstance();
             //Load profile and display on the form
-            new WordDocumentReader(mem.selectedProfile, richTextBox1);
+            new PdfDocumentReader(mem.selectedProfile, webBrowser1);
         }
 
         private void openExtendedProfile_Click(object sender, EventArgs e)

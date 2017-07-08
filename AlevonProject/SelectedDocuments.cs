@@ -32,15 +32,18 @@ namespace AlevonProject
         private SelectedDocuments()
         {
             articleSets = new List<ArticleSet>();
-            articleSets.Add(generateArticleSet(@"MIMO(AN).docx", @"MIMO(PR).docx", @"MIMO(ExtPR).docx")); //MIMO
-            articleSets.Add(generateArticleSet(@"M2M(AN).docx", @"M2M(PR).docx", @"M2M(ExtPR).docx")); //M2M
-            articleSets.Add(generateArticleSet(@"Kvantovye_kommunikatsii(AN).docx", @"Kvantovye_kommunikatsii(PR).docx", @"Kvantovye_kommunikatsii(ExtPR).docx")); //QC
+            articleSets.Add(generateArticleSet(@"MIMO(AN).pdf", @"MIMO(PR).pdf", @"MIMO(ExtPR).pdf")); //MIMO
+            articleSets.Add(generateArticleSet(@"M2M(AN).pdf", @"M2M(PR).pdf", @"M2M(ExtPR).pdf")); //M2M
+            articleSets.Add(generateArticleSet(@"Kvantovye_kommunikatsii(AN).pdf", @"Kvantovye_kommunikatsii(PR).pdf", @"Kvantovye_kommunikatsii(ExtPR).pdf")); //QC
 
-            articleSets.Add(generateArticleSet(@"USN(AN).docx", @"USN(PR).docx", @"USN(ExtPR).docx")); //USN
-            articleSets.Add(generateArticleSet(@"RFID(AN).docx", @"RFID(PR).docx", @"RFID(ExtPR).docx")); //RFID
+            articleSets.Add(generateArticleSet(@"USN(AN).pdf", @"USN(PR).pdf", @"USN(ExtPR).pdf")); //USN
+            articleSets.Add(generateArticleSet(@"RFID(AN).pdf", @"RFID(PR).pdf", @"RFID(ExtPR).pdf")); //RFID
 
-            articleSets.Add(generateArticleSet(@"LTE(AN).docx", @"LTE(PR).docx", @"LTE(ExtPR).docx")); //LTE
-            articleSets.Add(generateArticleSet(@"LTEadvanced(AN).docx", @"LTEadvanced(PR).docx", @"LTEadvanced(ExtPR).docx")); //LTEadvanced
+            articleSets.Add(generateArticleSet(@"LTE(AN).pdf", @"LTE(PR).pdf", @"LTE(ExtPR).pdf")); //LTE
+            articleSets.Add(generateArticleSet(@"LTEadvanced(AN).pdf", @"LTEadvanced(PR).pdf", @"LTEadvanced(ExtPR).pdf")); //LTEadvanced
+
+            articleSets.Add(generateArticleSet(@"GLONASS(AN).pdf", @"GLONASS(PR).pdf", @"GLONASS(ExtPR).pdf")); //GLONASS
+            articleSets.Add(generateArticleSet(@"NSN(AN).pdf", @"NSN(PR).pdf", @"NSN(ExtPR).pdf")); //NSN
         }
 
         public void setArticleIndex(int index)

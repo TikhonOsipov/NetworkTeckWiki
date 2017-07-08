@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openProfile = new System.Windows.Forms.Button();
             this.backToMain = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(814, 471);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
             // 
             // openProfile
             // 
@@ -66,14 +55,25 @@
             this.backToMain.UseVisualStyleBackColor = true;
             this.backToMain.Click += new System.EventHandler(this.backToMain_Click);
             // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webBrowser1.Location = new System.Drawing.Point(12, 12);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(790, 459);
+            this.webBrowser1.TabIndex = 4;
+            // 
             // AnnotationPreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 512);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.backToMain);
             this.Controls.Add(this.openProfile);
-            this.Controls.Add(this.richTextBox1);
             this.Name = "AnnotationPreview";
             this.Text = "Аннотация";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AnnotationPreview_FormClosing);
@@ -83,9 +83,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button openProfile;
         private System.Windows.Forms.Button backToMain;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

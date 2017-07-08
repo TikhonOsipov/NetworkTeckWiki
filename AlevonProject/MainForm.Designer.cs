@@ -37,6 +37,8 @@
             this.rfid = new System.Windows.Forms.LinkLabel();
             this.lte = new System.Windows.Forms.LinkLabel();
             this.lteAdvanced = new System.Windows.Forms.LinkLabel();
+            this.glonass = new System.Windows.Forms.LinkLabel();
+            this.nsn = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,11 +137,37 @@
             this.lteAdvanced.Text = "LTE Advanced";
             this.lteAdvanced.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lteAdvanced_LinkClicked);
             // 
+            // glonass
+            // 
+            this.glonass.AutoSize = true;
+            this.glonass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.glonass.Location = new System.Drawing.Point(260, 414);
+            this.glonass.Name = "glonass";
+            this.glonass.Size = new System.Drawing.Size(100, 24);
+            this.glonass.TabIndex = 8;
+            this.glonass.TabStop = true;
+            this.glonass.Text = "GLONASS";
+            this.glonass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.glonass_LinkClicked);
+            // 
+            // nsn
+            // 
+            this.nsn.AutoSize = true;
+            this.nsn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nsn.Location = new System.Drawing.Point(454, 442);
+            this.nsn.Name = "nsn";
+            this.nsn.Size = new System.Drawing.Size(50, 24);
+            this.nsn.TabIndex = 9;
+            this.nsn.TabStop = true;
+            this.nsn.Text = "NSN";
+            this.nsn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.nsn_LinkClicked);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 537);
+            this.Controls.Add(this.nsn);
+            this.Controls.Add(this.glonass);
             this.Controls.Add(this.lteAdvanced);
             this.Controls.Add(this.lte);
             this.Controls.Add(this.rfid);
@@ -167,6 +195,8 @@
         private System.Windows.Forms.LinkLabel rfid;
         private System.Windows.Forms.LinkLabel lte;
         private System.Windows.Forms.LinkLabel lteAdvanced;
+        private System.Windows.Forms.LinkLabel glonass;
+        private System.Windows.Forms.LinkLabel nsn;
     }
 }
 
